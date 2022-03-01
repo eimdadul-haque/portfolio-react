@@ -1,0 +1,79 @@
+.contact-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text-field{
+    width: 100%;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-contact{
+    display: flex;
+    justify-content: start;
+}
+
+.col-lg-6 .text{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.icon-contact-bottm{
+    display: none;
+}
+
+.input{
+    margin: 20px 0 0 0;
+}
+
+.submit-btn{
+    height: 40px;
+    width: 20px;
+}
+
+.submit{
+    height: 100%;
+    width: 100%;
+}
+
+.discuss{
+    font-family: Brush Script MT;
+    font-size: 55px;
+}
+
+.mt-5 p{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.col-md-12{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact{
+    color: #FFC75F;
+    border-bottom: #FFC75F solid 2px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 992px) {
+    .icon-contact{
+        display: none;
+    }
+    .icon-contact-bottm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
