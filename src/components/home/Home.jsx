@@ -3,10 +3,11 @@ import Typical from "react-typical";
 import { Button } from "@mui/material";
 import Eimadadul_img from "../../asset/Eimdadul.jpg"
 import Shape from "../../asset/shape-bg.png"
+import { HashLink as Link } from "react-router-hash-link"
 import "./Home.css"
 export default function Home() {
     return (
-        <div className='bg-dark' >
+        <div className='bg-dark' id='home' >
             <div className='container text-center'>
                 <div className='row'>
 
@@ -19,19 +20,19 @@ export default function Home() {
                     <div className='col-lg-6 col-md-12 cox text-white'>
                         <div className=''>
                             <div className='cox'>
-                                <a href='#' className='icon-container' style={{ backgroundColor: "#3b5998" }}>
+                                <a target="_blank" href='#' className='icon-container' style={{ backgroundColor: "#3b5998" }}>
                                     <i className="fa-brands fa-facebook-square icon-cls"></i>
                                 </a>
-                                <a className='icon-container' style={{ backgroundColor: "#007bb6" }} href='https://www.linkedin.com/in/eimdadul-haque/'>
+                                <a className='icon-container' style={{ backgroundColor: "#007bb6" }} target="_blank" href='https://www.linkedin.com/in/eimdadul-haque/'>
                                     <i className="fa-brands fa-linkedin icon-cls"></i>
                                 </a>
-                                <a className='icon-container' style={{ backgroundColor: "#bc2a8d" }} href='https://www.instagram.com/eimdadul_haque_rumi/'>
+                                <a className='icon-container' style={{ backgroundColor: "#bc2a8d" }} target="_blank" href='https://www.instagram.com/eimdadul_haque_rumi/'>
                                     <i className="fa-brands fa-instagram icon-cls"></i>
                                 </a>
-                                <a className='icon-container' style={{ backgroundColor: "#00aced" }} href='#'>
+                                <a className='icon-container' style={{ backgroundColor: "#00aced" }} target="_blank" href='#'>
                                     <i className="fa-brands fa-twitter icon-cls"></i>
                                 </a>
-                                <a className='icon-container' style={{ backgroundColor: "#3b5998" }} href='#'>
+                                <a className='icon-container' style={{ backgroundColor: "#3b5998" }} target="_blank" href='#'>
                                     <i className="fa-brands fa-github icon-cls"></i>
                                 </a>
                             </div>
@@ -59,19 +60,21 @@ export default function Home() {
                                         />
                                     </h1>
                                     <span className='profile-role-tagline'>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nobis?
+                                        I want to make things that make a difference
                                     </span>
                                 </span>
                             </div>
 
                             <div className='pt-5'>
                                 <span className='p-1'>
-                                    <Button variant="contained" color="warning" >
-                                        Hire Me
-                                    </Button>
+                                    <Link smooth to="#contact">
+                                        <Button variant="contained" color="warning" >
+                                            Hire Me
+                                        </Button>
+                                    </Link>
                                 </span>
                                 <span className='p-1'>
-                                    <a href='resume_007.pdf' download="resume_007.pdf">
+                                    <a href='Eimdadul_Resume.pdf' download="Eimdadul_Resume.pdf">
                                         <Button variant="outlined" color="error">
                                             Get Resume
                                         </Button>

@@ -2,10 +2,11 @@ import React from 'react';
 import "./About.css";
 import About_photo from "../../asset/About.JPG";
 import { Button } from '@mui/material';
+import { HashLink as Link } from "react-router-hash-link"
 
 export default function About() {
     return (
-        <div className='container mt-5 mb-5'>
+        <div className='container mt-5 mb-5' id='about'>
             <div className='mt-3'>
             </div>
             <div className='about-container mt-4'>
@@ -14,22 +15,24 @@ export default function About() {
                 </div>
                 <div className='about-text-container shadow'>
                     <div className='about-desc'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil consequatur aperiam corporis veniam amet? Esse earum illo ducimus minus eius, quasi vitae possimus rem! Numquam, tempora. Perferendis veniam vitae unde optio facere ut tempora minus sapiente, architecto accusantium amet! 
+                        My name is Eimdadul Haque and I am from the district of Tangail. I completed my graduation from Daffodil International University and my department was Computer Science & Engineering. I’m a full stack developer. In past few months I have done some personal project. Basically, I use ReactJS for frontend application and .Net Core for backend api.
                     </div>
                     <div className='about-highlight mt-5'>
                         <h5 >Here are few highlights: </h5>
                         <div className='text-group'>
                             <ul>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>.Net Core MVC, API & SignalR .</li>
+                                <li>React & Redux.</li>
+                                <li>HTML, CSS, DOM, JavaScript & Ajax.</li>
+                                <li>OOP, Design Pattern & SOLID .</li>
+                                <li>Database, Data Structure & Algorithm.</li>
                             </ul>
                         </div>
                     </div>
                     <div className='btn-group-custom'>
-                        <Button variant="contained" color="secondary">Hire Me</Button>
+                        <Link smooth to="#contact">
+                            <Button variant="contained" color="secondary">Hire Me</Button>
+                        </Link>
                         <Button variant="contained" color="error">Resume</Button>
                     </div>
                 </div>

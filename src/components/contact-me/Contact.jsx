@@ -20,7 +20,7 @@ export default function () {
     };
 
     return (
-        <div className='contact-container mt-5 mb-5' >
+        <div className='contact-container mt-5 mb-5' id="contact">
             <div className='container mt-5'>
                 <div className='row mt-4'>
                     <div className='col-md-12 col-lg-6 col-sm-12 mb-5'>
@@ -49,7 +49,7 @@ export default function () {
                         </div>
                     </div>
                     <form ref={form} onSubmit={sendEmail} className='col-md-12 col-lg-6 col-sm-12 '>
-                        <p className='text'><b>Lorem ipsum dolor sit?</b> amet consectetur adipisicing elit. Quam, voluptatibus.</p>
+                        <p className='text'><b>What’s your story? </b> Write me here .</p>
                         <div className='row input-group'>
                             <div className='col-sm-12 col-md-6'>
                                 <TextField fullWidth id="standard-basic" label="Name" variant="standard" name="name" />
@@ -79,10 +79,10 @@ export default function () {
                             <a href='#' className='icon-container' style={{ backgroundColor: "#3b5998" }}>
                                 <i className="fa-brands fa-facebook-square icon-cls"></i>
                             </a>
-                            <a className='icon-container' style={{ backgroundColor: "#007bb6" }} href='https://www.linkedin.com/in/eimdadul-haque/'>
+                            <a className='icon-container' style={{ backgroundColor: "#007bb6" }} target="_blank" href='https://www.linkedin.com/in/eimdadul-haque/'>
                                 <i className="fa-brands fa-linkedin icon-cls"></i>
                             </a>
-                            <a className='icon-container' style={{ backgroundColor: "#bc2a8d" }} href='https://www.instagram.com/eimdadul_haque_rumi/'>
+                            <a className='icon-container' style={{ backgroundColor: "#bc2a8d" }} target="_blank" href='https://www.instagram.com/eimdadul_haque_rumi/'>
                                 <i className="fa-brands fa-instagram icon-cls"></i>
                             </a>
                             <a className='icon-container' style={{ backgroundColor: "#00aced" }} href='#'>
